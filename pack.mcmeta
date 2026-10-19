@@ -1,0 +1,8 @@
+{
+  "pack": {
+    "description": "A library to compute 1d fast fourier transforms",
+    "pack_format": 121,
+    "min_format": [119, 0],
+    "max_format": [150, 0]
+  }
+}

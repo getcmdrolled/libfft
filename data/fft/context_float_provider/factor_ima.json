@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:mul",
+  "inputs": [
+    {
+      "type": "minecraft:sin",
+      "input": {
+        "type": "minecraft:div",
+        "left": {
+          "type": "minecraft:mul",
+          "inputs": [
+            -6.28319,
+            {
+              "type": "minecraft:storage",
+              "storage": "fft:compute",
+              "path": "idx",
+              "fallback": 0
+            }
+          ]
+        },
+        "right": {
+          "type": "minecraft:storage",
+          "storage": "fft:compute",
+          "path": "inlen",
+          "fallback": 0
+        }
+      }
+    },
+    1000000
+  ]
+}

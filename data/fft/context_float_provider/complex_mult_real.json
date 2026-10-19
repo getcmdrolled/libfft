@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:mul",
+  "inputs": [
+    {
+      "type": "minecraft:sub",
+      "left": {
+        "type": "minecraft:mul",
+        "inputs": [
+          {
+            "type": "minecraft:storage",
+            "storage": "fft:compute",
+            "path": "a0",
+            "fallback": 0
+          },
+          {
+            "type": "minecraft:storage",
+            "storage": "fft:compute",
+            "path": "b0",
+            "fallback": 0
+          }
+        ]
+      },
+      "right": {
+        "type": "minecraft:mul",
+        "inputs": [
+          {
+            "type": "minecraft:storage",
+            "storage": "fft:compute",
+            "path": "a1",
+            "fallback": 0
+          },
+          {
+            "type": "minecraft:storage",
+            "storage": "fft:compute",
+            "path": "b1",
+            "fallback": 0
+          }
+        ]
+      }
+    },
+    1000000
+  ]
+}
